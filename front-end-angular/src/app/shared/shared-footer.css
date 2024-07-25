@@ -1,0 +1,25 @@
+/* Tag Formats */
+footer {
+    margin-top: 10vh;
+    text-align: center;
+    background-color: #A9A9A922;
+    height: 10vh;
+    bottom: 0;
+
+}
+
+footer > p {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #C0C0C0;
+    font-size: 1rem;
+} 
+
+/*Class Formats*/
+
+
+
+/*Id Formats*/

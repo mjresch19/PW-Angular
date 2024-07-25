@@ -22,12 +22,7 @@
   />
 
   <!-- <link rel="icon" href="{{ url_for('static', filename='../../static/main/images/favicon.ico') }}" type="image/x-icon"> -->
-
-  <!-- <link rel="stylesheet"    href="{{ url_for('static', filename='main/css/navbar.css') }}">
-  <link rel="stylesheet"    href="{{ url_for('static', filename='main/css/footer.css') }}">
-  <link rel="stylesheet"    href="{{ url_for('static', filename='main/css/main.css') }}">
-  <link rel="stylesheet"    href="{{ url_for('static', filename='main/css/header.css') }}">
-  <link rel="shortcut icon" href="{{ url_for('static', filename='main/images/favicon.ico') }}"> -->
+  <!-- <link rel="shortcut icon" href="{{ url_for('static', filename='main/images/favicon.ico') }}"> -->
   <!-- <script src="{{ url_for('static', filename='main/js/main.js') }}" defer></script> -->
 </head>
 
@@ -35,29 +30,29 @@
     <article>
     <!-- The header  -->
     <header>
-      <img src="../../static/main/images/stpatricksbanner.jpg" alt="St. Patricks Day Banner" loading="lazy">
+      <img ngSrc="../assets/images/summer-banner.jpg" alt="Summer Banner" loading="lazy" height="200" width="367">
     </header>
     <!-- The navigation bar -->
     <nav>
       <div class="flex-container">
           <div id="sidebar" class="sidebar" aria-label="sidebar" aria-hidden="true">
             <div class="sidebar_content">
-              <a href="https://homework-fojekluksq-uc.a.run.app/home">Home Page</a>
+              <a href="localhost:4200/home">Home Page</a>
             </div>
             <div class="sidebar_content">
-              <a href="https://homework-fojekluksq-uc.a.run.app/projects">Project Page</a>
+              <a href="localhost:4200/projects">Project Page</a>
             </div>
             <div class="sidebar_content">
-              <a href="https://homework-fojekluksq-uc.a.run.app/piano">Piano Page</a>
+              <a href="localhost:4200/piano">Piano Page</a>
             </div>
             <div class="sidebar_content">
-              <a href="https://homework-fojekluksq-uc.a.run.app/resume">Resume</a>
+              <a href="localhost:4200/resume">Resume</a>
             </div>
             <div class="sidebar_content">
-              <a href="https://homework-fojekluksq-uc.a.run.app/chat">Chat</a>
+              <a href="localhost:4200/chat">Chat</a>
             </div>
             <div class="sidebar_content">
-            <a href="https://homework-fojekluksq-uc.a.run.app/login">Login</a>
+            <a href="localhost:4200/login">Login</a>
             </div>
             <div class="sidebar_content">
               <a  target="_blank" href="https://www.linkedin.com/in/max-resch-22646219b/">LinkedIn</a>
@@ -65,12 +60,12 @@
           </div>
             <h1>Welcome to Max's Website!<span style="font-size: 16px"><br>CSE 477 - Homework 3</span></h1>
           <!-- <button data-toggle-sidebar="sidebar"><img src="../static/main/images/clover-menu-bar.png" alt="clover-icon" loading="lazy" class="icon" id="icon-object"></img></button> -->
-          <a href="https://homework-fojekluksq-uc.a.run.app/home">Home Page</a>
-          <a href="https://homework-fojekluksq-uc.a.run.app/projects">Projects Page</a>
-          <a href="https://homework-fojekluksq-uc.a.run.app/piano">Piano Page</a>
-          <a href="https://homework-fojekluksq-uc.a.run.app/resume">Resume</a>
-          <a href="https://homework-fojekluksq-uc.a.run.app/chat">Chat</a>
-          <a href="https://homework-fojekluksq-uc.a.run.app/login">Login</a>
+          <a href="localhost:4200/home">Home Page</a>
+          <a href="localhost:4200/projects">Projects Page</a>
+          <a href="localhost:4200/piano">Piano Page</a>
+          <a href="localhost:4200/resume">Resume</a>
+          <a href="localhost:4200/chat">Chat</a>
+          <a href="localhost:4200/login">Login</a>
           <a target="_blank" href="https://www.linkedin.com/in/max-resch-22646219b/"><img src="../static/main/images/social-linkedin.png" alt="URL to LinkedIn Page" loading="lazy"></a>
       </div>
     </nav>
@@ -95,7 +90,6 @@
     </footer>
 
     </article>
-  
 </body>
-
 </html>
+<!-- <router-outlet /> -->

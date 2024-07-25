@@ -1,0 +1,236 @@
+:root {
+    --primary-nav-color: #007535;
+    --side-bar-color: #009a49;
+    --secondary-nav-color: #ff7900;
+    --secondary-nav-color-opaque: #ff790088;
+}
+
+
+/* Tag Elements */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    background-color: var(--primary-nav-color) ;
+    width: 100vw;
+    height: 15vh;
+    position: relative;
+    background-size: cover;
+    overflow:hidden;
+    min-height: 80px;
+}
+
+/*Class Elements */
+
+.flex-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.flex-container > h1{
+    font-size: 1.25rem;
+    width: 50vw;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: var(--secondary-nav-color);
+    white-space: nowrap;
+}
+
+.flex-container > a {
+    white-space: nowrap;
+    width: 15vw;
+    font-size: 1.5rem;
+    color: var(--secondary-nav-color);
+    text-decoration: none;
+    margin: min(1rem, 10vw);
+    text-align:center;
+
+}
+
+
+.flex-container > a:hover{
+    color: var(--secondary-nav-color-opaque);
+}
+
+.flex-container > a > img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin: min(1rem, 10vw);    
+    padding: 0 5% 0 5%;
+
+}
+
+.icon {
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    visibility: hidden; 
+    display: none;
+    margin-right: 10%;
+}
+
+.sidebar_content {
+    text-align: center;
+    padding: 20% 0 0 0;
+    color: #ffffff;
+    font-size: 1.5rem;
+    visibility: hidden;
+  }
+
+  .sidebar_content > a {
+    color: #ffffff;
+    text-decoration: none;
+    visibility: hidden;
+
+  }
+
+  .sidebar_content > a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+    visibility: hidden;
+
+  }
+
+
+  .sidebar[aria-hidden="true"] {
+    transition: 200ms;
+    transform: translateX(100%);
+    visibility: hidden;
+
+  }
+  .sidebar:not([aria-hidden]),
+  .sidebar[aria-hidden="false"] {
+    transition: 200ms;
+    transform: translateX(0);
+    visibility: hidden;
+
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+    padding-right: 5%;
+    z-index: 3;
+}
+
+/*Note: I understand 650 was assigned, but I found 850 to work very well for me for switching to the sidebar*/
+@media (max-width: 849px)
+{
+    nav {
+        background-color: var(--secondary-nav-color)  ;
+        width: 100vw;
+        height: 15vh;
+        min-height: 80px;
+        position: relative;
+        background-size: cover;
+        overflow:hidden;
+    }
+    
+    button {
+        background-color: transparent;
+        border: none;
+        padding-right: 5%;
+        z-index: 3;
+        visibility: visible;
+
+    }
+
+    .flex-container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .flex-container, .icon {
+        position: relative;
+        align-items: center;
+        visibility: visible !important;
+        display: inline-flex !important;
+    }
+    
+    .flex-container > h1{
+        font-size: 1rem;
+        padding-left: 5%;
+        color: var(--primary-nav-color);
+        flex: 2 1;
+    }
+    
+    .flex-container > a{
+        font-size: 1.5rem;
+        color: var(--primary-nav-color);
+        text-decoration: none;
+        margin: auto;
+        display: none;
+    }
+    
+    .flex-container > a:hover{
+        color: var(--secondary-nav-color-opaque);
+    }
+
+   
+    /*Incorporate the sidebar element into the page*/
+    .sidebar {
+        background-color: var(--side-bar-color);
+        height: 60vh;
+        position: fixed;
+        top: 20vh;
+        right: 0;
+        min-width: 300px;
+        z-index: 2;
+        padding-top: 20%;
+        border-radius: 10px 10px 10px 10px;
+        visibility: visible;
+        
+      }
+
+      .sidebar_content {
+        text-align: center;
+        padding: 20% 0 0 0;
+        color: #ffffff;
+        font-size: 1.5rem;
+        visibility: visible;
+
+      }
+
+      .sidebar_content > a {
+        color: #ffffff;
+        text-decoration: none;
+        visibility: visible;
+
+      }
+
+      .sidebar_content > a:hover {
+        color: #ffffff;
+        text-decoration: underline;
+        visibility: visible;
+
+      }
+
+
+      .sidebar[aria-hidden="true"] {
+        transition: 200ms;
+        transform: translateX(100%);
+        visibility: visible;
+
+      }
+      .sidebar:not([aria-hidden]),
+      .sidebar[aria-hidden="false"] {
+        transition: 200ms;
+        transform: translateX(0);
+        visibility: visible;
+
+      }
+
+}
+
+/*Tag Elements*/
