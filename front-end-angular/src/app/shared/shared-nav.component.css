@@ -1,4 +1,4 @@
-:root {
+:host {
     --primary-nav-color: #007535;
     --side-bar-color: #009a49;
     --secondary-nav-color: #ff7900;
@@ -32,6 +32,7 @@ nav {
     align-items: center;
     justify-content: space-around;
     width: 100%;
+    /* background-color: #007535 ; */
 }
 
 .flex-container > h1{

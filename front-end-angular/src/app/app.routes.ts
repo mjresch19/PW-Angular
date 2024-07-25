@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { BaseComponent } from './shared/shared.component';
+import { HomeComponent } from './home/home.component';
 import { AppComponent } from './app.component';
 
 export const routes: Routes = [
@@ -7,11 +7,11 @@ export const routes: Routes = [
     {
         path: '',
         title: 'App Home Page',
-        component: AppComponent,
+        component: HomeComponent,
     },
     {
         path: 'home',
         title: 'App Home Page',
-        component: BaseComponent,
+        component: HomeComponent,
     },
 ];
