@@ -1,8 +1,8 @@
 :host {
-    --primary-nav-color: #007535;
+    --primary-nav-color: #2a3e81;
     --side-bar-color: #009a49;
-    --secondary-nav-color: #ff7900;
-    --secondary-nav-color-opaque: #ff790088;
+    --secondary-nav-color: #966919;
+    --secondary-nav-color-opaque: #966919;
 }
 
 
@@ -123,7 +123,7 @@ nav {
 }
 
 /*Note: I understand 650 was assigned, but I found 850 to work very well for me for switching to the sidebar*/
-@media (max-width: 849px)
+@media (max-width: 1200px)
 {
     nav {
         background-color: var(--secondary-nav-color)  ;
