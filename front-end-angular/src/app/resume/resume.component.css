@@ -100,9 +100,13 @@ body{
     position: absolute;
     width: 40px;
     border-radius: 50%;
-    right: -39px;
+    /* right: -39px; */
     top: 40%;
     z-index: 10;
+}
+
+.left-container img {
+    right: -39px;
 }
 
 .right-container img {
@@ -163,7 +167,7 @@ body{
     left: -15px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
 
     .timeline{
         margin: 50px auto;
