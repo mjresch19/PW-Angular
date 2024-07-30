@@ -1,5 +1,6 @@
 body{
     background-color: #2E364A;
+    width: 100%;
 }
 
 .timeline {
@@ -122,7 +123,7 @@ body{
     top: 0;
     left: 50%;
     margin-left: -3px;
-    animation: moveline 6s linear forwards;
+    animation: moveline 12s linear forwards;
     z-index: 1;
 }
 @keyframes moveline {

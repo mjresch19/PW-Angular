@@ -1,8 +1,8 @@
 :host {
-    --primary-nav-color: #2a3e81;
+    --primary-nav-color: #4F5052;
     --side-bar-color: #009a49;
-    --secondary-nav-color: #966919;
-    --secondary-nav-color-opaque: #966919;
+    --secondary-nav-color: #4F5052;
+    --secondary-nav-color-opaque: #C5CCC833;
 }
 
 
@@ -17,56 +17,57 @@ body {
 nav {
     background-color: var(--primary-nav-color) ;
     width: 100vw;
-    height: 15vh;
+    height: 100px;
+    min-height: 10vh;
     position: relative;
     background-size: cover;
     overflow:hidden;
-    min-height: 80px;
+    display: flex;
+    justify-content: center;
+  
 }
 
 /*Class Elements */
 
-.flex-container {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    /* background-color: #007535 ; */
+.link-group {
+  float: left;
 }
 
-.flex-container > h1{
-    font-size: 1.25rem;
-    width: 50vw;
-    padding-left: 5%;
-    padding-right: 5%;
-    color: var(--secondary-nav-color);
-    white-space: nowrap;
+.link-group {
+  height: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
-.flex-container > a {
-    white-space: nowrap;
-    width: 15vw;
-    font-size: 1.5rem;
-    color: var(--secondary-nav-color);
-    text-decoration: none;
-    margin: min(1rem, 10vw);
-    text-align:center;
-
+.link-group li {
+  list-style-type: none;
+  flex-grow: 1;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
-.flex-container > a:hover{
-    color: var(--secondary-nav-color-opaque);
+.link-group a {
+  text-decoration: none;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.flex-container > a > img {
-    width: 50px;
-    height: 50px;
-    position: relative;
-    margin: min(1rem, 10vw);    
-    padding: 0 5% 0 5%;
-
+.link-group > li:hover{
+  background-color: var(--secondary-nav-color-opaque);
 }
 
 .icon {
@@ -78,160 +79,48 @@ nav {
     margin-right: 10%;
 }
 
-.sidebar_content {
-    text-align: center;
-    padding: 20% 0 0 0;
-    color: #ffffff;
-    font-size: 1.5rem;
-    visibility: hidden;
-  }
-
-  .sidebar_content > a {
-    color: #ffffff;
-    text-decoration: none;
-    visibility: hidden;
-
-  }
-
-  .sidebar_content > a:hover {
-    color: #ffffff;
-    text-decoration: underline;
-    visibility: hidden;
-
-  }
-
-
-  .sidebar[aria-hidden="true"] {
-    transition: 200ms;
-    transform: translateX(100%);
-    visibility: hidden;
-
-  }
-  .sidebar:not([aria-hidden]),
-  .sidebar[aria-hidden="false"] {
-    transition: 200ms;
-    transform: translateX(0);
-    visibility: hidden;
-
-  }
-
-  button {
-    background-color: transparent;
-    border: none;
-    padding-right: 5%;
-    z-index: 3;
-}
+/*Tag Elements*/
 
 /*Note: I understand 650 was assigned, but I found 850 to work very well for me for switching to the sidebar*/
 @media (max-width: 1200px)
 {
-    nav {
-        background-color: var(--secondary-nav-color)  ;
-        width: 100vw;
-        height: 15vh;
-        min-height: 80px;
-        position: relative;
-        background-size: cover;
-        overflow:hidden;
-    }
+  nav {
+      background-color: var(--secondary-nav-color)  ;
+      width: 100vw;
+      height: auto;
+      min-height: 100px;
+      position: relative;
+      background-size: cover;
+      /* overflow:hidden; */
+      flex-direction: column;
+  }
+
+  .link-group {
+    display: flex;
+    flex-direction: column; /* Change to column direction */
+    width: 100%;
+    height: auto;
+  }
+
+  .link-group li {
+      width: 100%; /* Full width for list items */
+      height: auto;
+  }
+
+  .link-group a {
+      width: 100%; /* Full width for links */
+      height: auto;
+      padding: 10px 0; /* Adjust padding */
+  }
     
-    button {
-        background-color: transparent;
-        border: none;
-        padding-right: 5%;
-        z-index: 3;
-        visibility: visible;
+  button {
+      background-color: transparent;
+      border: none;
+      padding-right: 5%;
+      z-index: 3;
+      visibility: visible;
 
-    }
-
-    .flex-container {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width: 100%;
-    }
-
-    .flex-container, .icon {
-        position: relative;
-        align-items: center;
-        visibility: visible !important;
-        display: inline-flex !important;
-    }
-    
-    .flex-container > h1{
-        font-size: 1rem;
-        padding-left: 5%;
-        color: var(--primary-nav-color);
-        flex: 2 1;
-    }
-    
-    .flex-container > a{
-        font-size: 1.5rem;
-        color: var(--primary-nav-color);
-        text-decoration: none;
-        margin: auto;
-        display: none;
-    }
-    
-    .flex-container > a:hover{
-        color: var(--secondary-nav-color-opaque);
-    }
-
-   
-    /*Incorporate the sidebar element into the page*/
-    .sidebar {
-        background-color: var(--side-bar-color);
-        height: 60vh;
-        position: fixed;
-        top: 20vh;
-        right: 0;
-        min-width: 300px;
-        z-index: 2;
-        padding-top: 20%;
-        border-radius: 10px 10px 10px 10px;
-        visibility: visible;
-        
-      }
-
-      .sidebar_content {
-        text-align: center;
-        padding: 20% 0 0 0;
-        color: #ffffff;
-        font-size: 1.5rem;
-        visibility: visible;
-
-      }
-
-      .sidebar_content > a {
-        color: #ffffff;
-        text-decoration: none;
-        visibility: visible;
-
-      }
-
-      .sidebar_content > a:hover {
-        color: #ffffff;
-        text-decoration: underline;
-        visibility: visible;
-
-      }
-
-
-      .sidebar[aria-hidden="true"] {
-        transition: 200ms;
-        transform: translateX(100%);
-        visibility: visible;
-
-      }
-      .sidebar:not([aria-hidden]),
-      .sidebar[aria-hidden="false"] {
-        transition: 200ms;
-        transform: translateX(0);
-        visibility: visible;
-
-      }
-
+  }
 }
 
-/*Tag Elements*/
+
