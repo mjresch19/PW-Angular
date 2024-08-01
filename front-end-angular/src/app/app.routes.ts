@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { MyTimelineComponent } from './mytimeline/mytimeline.component';
 import { ResumeComponent } from './resume/resume.component';
+import { LoginComponent } from './login/login.component';
 
 export const routes: Routes = [
     //We will use the home page as the root of the application for now
@@ -24,5 +25,10 @@ export const routes: Routes = [
         path: 'resume',
         title: 'Resume Page',
         component: ResumeComponent,
+    },
+    {
+        path: 'login',
+        title: 'Login Page',
+        component: LoginComponent,
     }
 ];

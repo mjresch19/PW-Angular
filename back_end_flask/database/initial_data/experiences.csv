@@ -1,0 +1,8 @@
+"experience_id","position_id","name","description","hyperlink","start_date","end_date"
+"1","2","Project Management","Assisted in the teaching of project management principles",NULL,"2024-01-01",NULL
+"2","1","HUBZone Contract Program","Used web scraping tools, Government databases, Python, and Tableau to provide insight on data regarding the HUBZone Contract Program",NULL,"2022-03-01","2024-01-01"
+"3","1","DEI Research","Gathered information on the top 80 business school's DEI programs to generate ideas for furthering MSU's DEI initiatives",NULL,"2024-01-01","2024-02-01"
+"4","1","Guest Speaking","Developed a week-long lesson plan and taught MSU's Supply Chain Data Analytics class on programming tools that aid in data analytics",NULL,"2022-03-01","2022-05-01"
+"5","4","Backend Software Development", "Created back-end scripts for the summer intern project","https://www.rocketmortgage.com/","2023-05-15","2023-08-10"
+"6","5","Frontend Software Development", "Created front-end scripts for a fall intern project","https://www.evolutiops.com/","2023-09-01","2023-12-01"
+"7","6","Fullstack Software Development", "Utilized Shopify to enhance user experience", "https://yorunomachidesign.com/","2024-01-01",NULL

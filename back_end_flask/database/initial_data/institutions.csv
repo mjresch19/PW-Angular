@@ -1,0 +1,6 @@
+"inst_id","type","name","department","address","city","state","zip"
+"1","Student","College of Engineering - MSU","Computer Science & Engineering",NULL,"East Lansing","Michigan",NULL
+"2","Student","Broad College of Business - MSU","Finance & SCM",NULL,"East Lansing","Michigan",NULL
+"3","Internship","Evolutio","Software Engineering",NULL,"East Lansing","Michigan",NULL
+"4","Internship","YoruNoMachi","Software Engineering",NULL,"East Lansing","Michigan",NULL
+"5","Internship","Rocket Mortgage","Software Engineering",NULL,"Detroit","Michigan",NULL

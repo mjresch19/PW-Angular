@@ -16,7 +16,6 @@ import { NgOptimizedImage } from '@angular/common';
         <li><a routerLink="/tester">Become a Tester *Coming Soon*</a></li>
         <li><a target="_blank" href="https://www.linkedin.com/in/max-resch-22646219b/"><img ngSrc="../assets/images/social-linkedin.png" alt="URL to LinkedIn Page" loading="lazy" width="40" height="40"></a></li>
       </ul>
-
     </nav>
     <router-outlet></router-outlet>
   `,
